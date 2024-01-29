@@ -32,7 +32,7 @@ void insertion_sort_list(listint_t **list)
  * Return: pointer to the current position
  */
 
-listint_t *swap_node(listint_t, *node, listint_t **list)
+listint_t *swap_node(listint_t *node, listint_t **list)
 {
 	listint_t *prev, *current;
 
@@ -52,4 +52,3 @@ listint_t *swap_node(listint_t, *node, listint_t **list)
 		*list =  current;
 	return (current);
 }
-
