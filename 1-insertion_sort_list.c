@@ -3,7 +3,7 @@
 /**
  * insertion_sort_list - sorts a doubly linked list of integers in an ascending
  * order
- * @list - List to be sorted
+ * @list: List to be sorted
  */
 
 void insertion_sort_list(listint_t **list)
@@ -45,7 +45,7 @@ listint_t *swap_node(listint_t *node, listint_t **list)
 	current->next = prev;
 	current->prev = prev->prev;
 	prev->prev = current;
-	
+
 	if (current->prev)
 		current->prev->next = current;
 	else
